@@ -1,0 +1,173 @@
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cabin', sans-serif;}
+
+body {color: white;
+	background-image: linear-gradient(to bottom right, #ee66aa 6%, #8930e8 55%);}
+
+li {list-style: none;}
+
+li a {text-decoration: none; color: white;}
+
+li a:hover {color: #1a001a;}
+
+/* PAGES MAIN CONTAINER */
+.container {
+	width: 100%;
+	min-height: 630px;
+}
+
+.main-content {
+	margin: 100px 30px 50px 30px;
+}
+
+.black {
+	color: #1a001a;
+}
+
+/* MENU */
+.nav-bar {
+	width: 100%;
+	text-transform: uppercase;
+	padding: 3% 4%;
+}
+
+.btn-menu {
+	width: 35px;
+	height: 35px;
+	float: right;
+	text-align: center;
+	color: white;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.menu {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(137, 48, 232, 0.95);
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.btn-close {
+	float: right;
+	margin-top: 3%;
+	margin-right: 4%;
+	cursor: pointer;
+}
+
+.menu ul {
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+.menu li {
+	padding: 3%;
+	font-size: 1.3em;
+}
+
+/* HOME */
+.home {
+	font-size: 1.3em;
+}
+
+/* CONTACT */
+.contact-info {
+	font-size: 1em;
+	line-height: 30px;
+}
+
+.fa-3x {
+	font-size: 35px;
+}
+
+.contact-links li {
+	float: left;
+	padding: 10% 5% 3% 0;
+}
+
+/* SKILLS */
+.progress-bar {
+    width: 100%;
+    height: 15px;
+    border: 1px solid #1a001a;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.progress-status {
+    height: 100%;
+    background-color: #1a001a;
+    font-size: 10px;
+    text-align: center;
+}
+
+.skills p {
+    padding-top: 13px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 420px) {
+	.main-content {
+		margin: 100px 50px 0 50px;
+	}
+
+	.contact-info {
+		font-size: 1.5em;
+		line-height: 40px;
+	}
+
+	.fa-3x {
+		font-size: 50px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.main-content {
+		margin: 100px 100px 0 100px;
+	}
+
+	.progress-bar {
+	    width: 70%;
+	}
+}
+
+@media screen and (min-width: 900px){
+	.main-content {
+		margin: 90px 140px 0 140px;
+	}
+
+	.nav-bar {
+		padding: 0;
+	}
+
+	.btn-menu, .btn-close {
+		display: none;
+	}
+
+	.menu {
+		width: auto;
+		height: 70px;
+		background-color: rgba(137, 48, 232, 0.3);
+		display: block !important;
+		position: static;
+	}
+
+	.menu li {
+		padding-top: 25px;
+		padding-bottom: 30px;
+		float: left;
+		font-size: 1.1em;
+	}
+
+	.contact-links li {
+		padding: 40px 40px 15px 0;
+	}
+
+	.progress-bar {
+	    width: 50%;
+	}
+}
